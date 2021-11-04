@@ -10,6 +10,10 @@ export const scope = 'app.containers.HomePage';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'This is the HomePage container!',
+    defaultMessage: 'COVIDATA',
+  },
+  headerTitle: {
+    id: `${scope}.header`,
+    defaultMessage: 'Tracking Covid-19 Globaly',
   },
 });

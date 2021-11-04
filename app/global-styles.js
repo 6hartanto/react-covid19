@@ -3,29 +3,35 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    height: 100%;
-    width: 100%;
+    background-color: #f9f9f9;
+    margin: 0 2%;
+    font-family: lato;
   }
 
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .titleContainer {
+    display: flex;
+    flex-direction: row;
   }
 
-  #app {
-    background-color: #fafafa;
-    min-height: 100%;
-    min-width: 100%;
+  .title1 {
+    color: #ce5959;
+    font-weight: 800;
+    padding-right: 30px;
   }
 
-  p,
-  label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.5em;
+  .title2 {
+    color: #525252;
+    font-weight: 300;
   }
+
 `;
 
 export default GlobalStyle;
